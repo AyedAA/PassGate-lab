@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard - Employee Portal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1e3a8a;
+        color: white;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        color: #1e3a8a;
+      }
+      h1 {
+        text-align: center;
+        color: #1e3a8a;
+      }
+      .success-box {
+        background: #e6f7e6;
+        border: 2px solid #4caf50;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .flag {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1e3a8a;
+        background: #e6f3ff;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      .info-box {
+        background: #fff3e6;
+        border: 1px solid #ff9800;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 12px;
+        color: #666;
+      }
+      .logout-btn {
+        background: #ff6b6b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏢 Employee Dashboard</h1>
+
+      <div class="success-box">
+        <h2>✅ Login Successful!</h2>
+        <p>Welcome back, Administrator!</p>
+      </div>
+
+      <div class="flag">🚩 Flag: ayedCTF{debug_info_leak_vulnerability}</div>
+
+      <div class="info-box">
+        <h3>📊 System Information</h3>
+        <p><strong>User Role:</strong> System Administrator</p>
+        <p><strong>Last Login:</strong> Just now</p>
+        <p><strong>System Status:</strong> All systems operational</p>
+      </div>
+
+      <div style="text-align: center">
+        <button class="logout-btn" onclick="window.location.href='/'">
+          Logout
+        </button>
+      </div>
+
+      <div class="footer">
+        <p>Broken Authentication Lab - Demonstration</p>
+        <p>Created by Ayed A. Areda - GitHub: AyedAA</p>
+        <p>
+          <em
+            >This lab shows the dangers of exposing debug information in
+            production</em
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
